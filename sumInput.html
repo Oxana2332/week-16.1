@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+"use strict"
+
+    function sumInput(){
+        let sum = 0;
+        let numbers = [];
+
+        for (;;){
+            let num = +prompt ("Введите значение");
+            if (!num) break;
+            numbers.push(num);
+            numbers.sort(function (a, b) {
+                    return a - b
+                })
+                sum += num;
+        }  
+        alert(numbers);
+        return ('Сумма: ' + sum);
+    }
+
+    alert (sumInput());
+</script>
+</body>
+</html>
