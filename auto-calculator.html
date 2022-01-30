@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости авто</title>
+    <link rel="stylesheet" href="assets/auto-calculator.css">
+</head>
+
+<body>
+    <article class="cont">
+        <h1>Калькулятор стоимости авто</h1>
+        <p>Выберите бренд автомобиля:</p>
+        <select id="brands" onchange="selectBrand(this)" class="select">
+            <option value="none">- не выбрано -</option>
+            <option value="audi">Audi</option>
+            <option value="honda">Honda</option>
+            <option value="suzuki">Suzuki</option>
+            <option value="volvo">Volvo</option>
+        </select>
+        <select id="models" style="display: none;" class="select input cont2"></select>
+        <p>Тип кузова</p>
+        <select>
+            <option class="input" value="0">- не выбрано -</option>
+            <option class="input" value="20000">Лифтбэк</option>
+            <option class="input" value="30000">Универсал</option>
+            <option class="input" value="100000">Кабриолет</option>
+            <option class="input" value="10000">Хэтчбек</option>
+        </select>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Тип коробки передач</legend>
+            <div>автомат<input class="input" value="30000" type="radio" name="gearbox"></div>
+            <div>робот<input class="input" value="20000" type="radio" name="gearbox"></div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Тип топлива</legend>
+            газ<input class="input" value="5000" type="radio" name="fuel">
+            дизель<input class="input" value="7000" type="radio" name="fuel">
+        </fieldset>
+        <br>
+        В кредит <input class="input" value="40000" type="checkbox"> <br>
+        Застраховать авто<input class="input" value="10000" type="checkbox"> <br>
+        Поставить на учёт<input class="input" value="5000" type="checkbox"> <br>
+        <hr>
+        <div id="price"></div>
+        <button id="button" type="button" onclick="onButtonClick();">Рассчитать</button>
+    </article>
+
+    <script src="assets/auto-calculator.js"></script>
+</body>
+
+</html>

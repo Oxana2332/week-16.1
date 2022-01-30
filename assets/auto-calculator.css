@@ -1,0 +1,26 @@
+
+
+h1 {
+    background-color: red;
+    padding: 2%;
+    color: white;
+}
+
+.cont {
+    margin: 5% 30%;
+    text-align: center;
+}
+
+.cont2 {
+    text-align: center;
+    margin: 5% 40%;
+}
+
+button {
+    background-color: red;
+    border-radius: 5%;
+    width: 30%;
+    padding: 2%;
+    border: solid 0px;
+    color: white;
+}
