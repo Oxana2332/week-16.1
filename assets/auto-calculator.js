@@ -48,6 +48,7 @@ function calcPrice() {
 
     for (let price of prices) {
         let currentPrice;
+
         if (price.type == "checkbox" || price.type == "radio") {
             if (price.checked) {
                 currentPrice = Number(price.value);
@@ -58,6 +59,7 @@ function calcPrice() {
         else {
             currentPrice = Number(price.value);
         }
+        
     sum = sum + currentPrice;
     }
     return sum;
